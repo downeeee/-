@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+/* 모바일릏 기본으로 */
+
+
+#wrap{width: 80%; margin: 0 auto; 
+        max-width: 1200px; display: flex;flex-direction: column;
+        flex-wrap: nowrap;}
+
+.info_section{width: 100%; background-color: rgb(0, 187, 0);
+                border-bottom: 1px solid rgb(144, 255, 144);
+            order: 1;}
+
+.info_list{display: flex; }
+.info_list li{width: 25%; text-align: center;}
+.info_list li a{display: block;padding: 15px 0;}
+
+/* header영역 */
+
+.header{display: flex; flex-direction: column;width: 100%;position: relative;
+        order: 2;}
+
+.logo{width: 100%; text-align: center; background-color: rgb(0, 187, 0) ; color: white;font-size: 20px;
+    line-height: 23px; text-shadow: 0 2px 1px rgb(0, 54, 0);padding: 30px 0;}
+.nav{width: 100%; display: none;}
+
+.gnb{}
+.gnb li{display: flex; justify-content: space-between; background-color: rgb(65, 65, 65);}
+.gnb li a{color:  white;width: 80%; padding: 15px 0; text-indent: 20px; 
+            font-weight: 600; font-size: 14px;}
+.sub_menu_toggle_btn{width: 20%; background: url(../images/s_images/sub_menu_toggle_btn.png)center center no-repeat;
+                        cursor: pointer; text-indent: -9999px;}
+
+
+
+
+.menu_toggle_btn{position: absolute;width: 30px; height: 30px; background: url(../images/s_images/menu_toggle_btn.png) no-repeat;
+                text-indent: -9999px;right: 10px; top: 10px; cursor: pointer;}
+
+
+
+/* slider_section영역*/
+
+.slider_section{width: 100%; height: 300px; background:url(../images/p_images/slider_01.jpg) center center no-repeat;
+                display: flex; justify-content: space-between; align-items: center;
+                order: 3;}
+
+.slider_section span{width: 34px; height: 39px; background: url(../images/s_images/slider_arrow.png) no-repeat;
+                    cursor: pointer; text-indent: -9999px; display: block;}
+
+span.preview_btn{margin-left: -10px;}
+
+span.next_btn{margin-right: -10px; background-position: right;}
+
+
+/* last_post_section popular_post_section 영역 */
+
+.last_post_section h2 , .popular_post_section h2{ font-size: 20px; text-align: center;
+        color: white; margin-bottom: 30px;text-shadow: 1px 2px 1px black;
+        }
+
+
+.last_post_section li , .popular_post_section li{margin-top: 15px; color: white;
+        font-weight: 500; /* list-style: disc; */
+        background: url(../images/s_images/post_circle_icon.png) no-repeat center left;
+        padding-left: 15px; text-shadow: 1px 2px 1px black;}
+/* last_post_section영역 */
+
+.last_post_section{background-color: blueviolet; padding: 40px 12%;
+                    order: 4;}
+
+/* popular_post_section 영역 */
+
+
+.popular_post_section{background-color: coral;padding: 40px 12%;
+                    order: 5;}
+
+/* gallery_section 영역 */
+.gallery_section{width: 100%; background-color: tomato; text-align: center;
+color: white; padding: 50px 12%; text-shadow: 1px 1px 1px black;
+                order: 6;}
+
+.gallery_section img{width: 100%; max-width: 100%;border-radius: 10px;
+                    box-shadow: 1px 1px 1px black;}
+
+.gallery_list li:nth-child(2){margin-top: 30px;}
+
+.gallery_list figcaption{margin-top: 20px; font-weight: bold; font-size: 18px;}
+
+
+
+
+
+
+
+/* rankup_section 영역 */
+
+.rankup_section{background-color:dodgerblue ; padding: 40px 12%;
+                order: 7;}
+
+.rankup_section h2{text-align: center; color: white; margin-bottom: 15px;}
+
+.rankup_list{display: flex; flex-wrap: wrap; justify-content: space-between;}
+.rankup_list li{width: 48%; margin-bottom: 15px;}
+
+.rankup_list li a{display: block; padding: 10px 0; border: 1px solid white;
+border-radius: 10px; text-align: center; color: white; font-weight: 600;
+    text-shadow: 1px 1px 1px black;box-shadow: 1px 1px 1px black;}
+
+
+
+
+/* banner_section영역 */
+
+.banner_section{order: 8;}
+
+.banner_box1{background-color: brown;}
+.banner_box1 a{display: block; padding: 30px 0; text-align: center;}
+
+.banner_box2{background-color:rgb(107, 26, 26);}
+
+.banner_list{display: flex; padding: 30px 12%; justify-content: space-between;}
+.banner_list li{}
+
+
+
+.sns_section{background-color: white; padding: 30px 12%;
+            order: 9;}
+
+.sns_list{display: flex; justify-content: space-between;}
+
+.sns_list li{}
+
+
+.footer{width: 100%; background-color: rgb(58, 58, 58);
+        order: 10;}
+.footer p{ color:  white ; padding: 20px; text-align: center;font-weight: 700;
+}
+
+
+
+/* 테블릿용 */
+@media screen and (min-width : 768px) {
+    #wrap{flex-direction: row; flex-wrap: wrap; /* flex-flow: row wrap; */
+        }
+}/* 768 */
+
+
+
+
+/* PC용 */
+@media screen and (min-width : 960px) {
+    
+}/* 960 */
